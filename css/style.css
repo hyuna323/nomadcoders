@@ -1,0 +1,26 @@
+.hidden {
+  display: none;
+}
+
+body {
+  margin: 50px;
+  border: 1px solid #333;
+  border-radius: 10px;
+}
+section {
+  /* display: flex; */
+}
+#weather {
+  width: 100%;
+}
+#weather span {}
+#clock {
+  width: 250px;
+  height: 100%;
+}
+#login-form {}
+#greeting {}
+#todo-form {}
+#todo-list {}
+#quote {}
+#quote span {}

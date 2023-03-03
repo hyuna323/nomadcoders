@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>nomadcoder</title>
+</head>
+<body>
+  <div id="weather">
+    <span></span>
+    <span></span>
+  </div>
+  <main>
+    <section class="greeting_part">
+      <form class="hidden" id="login-form">
+        <input required type="text" placeholder="what is your name?" maxlength="15" />
+        <!-- 결과가 보내짐 -->
+        <!-- 엔터를 누르면 자동으로 submit이 되는데 이런 방식은 매번 사이트가 새로고침 되는 것이기 때문에 좋지 않음 -->
+        <input type="submit" value="login" />
+      </form>
+      <h1 id="greeting" class="hidden"></h1>
+      <form id="todo-form">
+        <input type="text" placeholder="Write a To Do and Press Enter" required/>
+      </form>
+    </section>
+    <section class="quote_part">
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
+    </section>
+    
+    <h2 id="clock">00:00:00</h2>
+    <ul id="todo-list">
+      
+    </ul>
+  </main>
+  <script src="js/greeting.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/quotes.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/weather.js"></script>
+</body>
+</html>
