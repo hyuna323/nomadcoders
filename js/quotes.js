@@ -41,8 +41,8 @@ const quotes = [
   },
   ];
 
-  const quote = document.querySelector("#quote span:first-child");
-  const author = document.querySelector("#quote span:last-child");
+  const quote = document.querySelector(".quote span:first-child");
+  const author = document.querySelector(".quote span:last-child");
 
   // 0부터 array의 길이인 9 사이 숫자들 접근
   // console.log(quotes[0-9]);

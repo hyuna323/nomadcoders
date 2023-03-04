@@ -1,11 +1,11 @@
-const toDoForm = document.getElementById("todo-form");
+const toDoForm = document.getElementById("right_part");
 
 /* toDoInput을 전체 document에서 전체 HTML을 찾아볼 수 있음
   또는 toDoInput을 toDoForm안에서만 찾아 볼 수도 있음*/
 const toDoInput = toDoForm.querySelector("input");
 // id가 todo-form인 form안에서 input을 찾는 것
 
-const toDoList = document.getElementById("todo-list");
+const toDoList = document.getElementById("right_part");
 
 const TODOS_KEY = "todos";
 

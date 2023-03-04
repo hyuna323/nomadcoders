@@ -8,34 +8,45 @@
   <title>nomadcoder</title>
 </head>
 <body>
-  <div id="weather">
-    <span></span>
-    <span></span>
-  </div>
   <main>
-    <section class="greeting_part">
-      <form class="hidden" id="login-form">
-        <input required type="text" placeholder="what is your name?" maxlength="15" />
-        <!-- 결과가 보내짐 -->
-        <!-- 엔터를 누르면 자동으로 submit이 되는데 이런 방식은 매번 사이트가 새로고침 되는 것이기 때문에 좋지 않음 -->
-        <input type="submit" value="login" />
-      </form>
-      <h1 id="greeting" class="hidden"></h1>
-      <form id="todo-form">
-        <input type="text" placeholder="Write a To Do and Press Enter" required/>
-      </form>
-    </section>
-    <section class="quote_part">
-      <div id="quote">
+    <section id="top_part">
+      <div class="weather">
+        <span></span>
+        <span></span>
+      </div>
+      <div class="login">
+        <form class="hidden" id="login-form">
+          <input class="login_name" required type="text" placeholder="what is your name?" maxlength="15" />
+          <!-- 결과가 보내짐 -->
+          <!-- 엔터를 누르면 자동으로 submit이 되는데 이런 방식은 매번 사이트가 새로고침 되는 것이기 때문에 좋지 않음 -->
+          <input class="login_btn" type="submit" value="login" />
+        </form>
+        <h1 id="greeting" class="hidden"></h1>
+      </div>
+      <div class="quote">
         <span></span>
         <span></span>
       </div>
     </section>
+    <section id="bottom">
+      <section id="left_part">
+        <div class="clock_part">
+          <h2 class="clock">00:00:00</h2>
+        </div>
+        <div class="random_background">
+          <span></span>
+        </div>
+      </section>
+      <section id="right_part">
+        <ul class="todo-list">
+          <form id="todo-form">
+            <input type="text" placeholder="Write a To Do and Press Enter" required/>
+          </form>
+        </ul>
+      </section>
+    </section>
     
-    <h2 id="clock">00:00:00</h2>
-    <ul id="todo-list">
       
-    </ul>
   </main>
   <script src="js/greeting.js"></script>
   <script src="js/clock.js"></script>

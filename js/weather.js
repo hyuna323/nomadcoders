@@ -15,8 +15,8 @@ function onGeoOk(position){
   // url을 불러오는 함수 fetch(url)사용
   fetch(url).then(response => response.json().then(data => {
     // 날씨 불러오기
-    const weather = document.querySelector("#weather span:first-child")
-    const city = document.querySelector("#weather span:last-child")
+    const weather = document.querySelector(".weather span:first-child")
+    const city = document.querySelector(".weather span:last-child")
     city.innerText = data.name;
     // 온도 불러오기
     weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
