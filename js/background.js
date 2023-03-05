@@ -1,5 +1,5 @@
 // img 파일과 이름을 같게 해줘야 함
-const images = ["2.png"];
+const images = ["0.jpeg", "1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg"];
 
 const chosenImage = images[Math.floor(Math.random() * images.length)];
 

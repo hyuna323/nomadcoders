@@ -81,7 +81,7 @@ function handleToDoSubmit(event) {
 
   // 데이터베이스에게 id를 저장하는 옵션 주기 => 삭제가능하다는 얘기
   const newTodoObj = {
-    text:newTodo,
+    text: newTodo,
     
     // Date.now() = 숫자를 랜덤으로 가져옴
     // id가 있는 이유 : id로 각각의 title을 구별하고자 함
